@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Product List </title>
+    </head>
+    <body>
+        <style>
+            table{
+                border-collapse:collapse;
+            }
+            th,td{
+                border:1px solid #000;
+            }
+        </style>
+        {{title}}
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for record in records %}
+                <tr>
+                    <td>{{record.id}}</td>
+                     <td>{{record.name}}</td>
+                      <td>{{record.price}}</td>
+                </tr>
+                {% endfor %}
+                
+            </tbody>
+        </table>
+    </body>
+    </html>

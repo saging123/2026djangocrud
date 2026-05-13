@@ -1,0 +1,7 @@
+# pip install -r requirements.txt
+# django-admin startproject crudproject .
+# python manage.py startapp crudapp
+# edit crudproject/settings.py > add crudapp as installed app
+# create file crudapp/templates/crudapp/home.html
+# python manage.py runserver
+django
