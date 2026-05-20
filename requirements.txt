@@ -5,3 +5,4 @@
 # create file crudapp/templates/crudapp/home.html
 # python manage.py runserver
 django
+psycopg[binary]

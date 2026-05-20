@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title> Add Product</title>
+</head>
+<body>
+{{message}}
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" 
+                name="prod_id"
+                placeholder="Product ID">
+        <input type="text"
+                name="prod_name"
+                placeholder="Product Name">
+        <input type="number"
+                name="prod_price"
+                placeholder="Product Price">
+        <input type="submit"
+                value="Add">
+        <input type="reset"
+                value="Clear">
+    </form>
+
+    <a 
+        href="{% url "product_list" %}"
+    > BACK TO LIST</a>
+
+</body>
+</html>
